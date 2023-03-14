@@ -26,29 +26,29 @@ public class Main {
 
         // Prime Number in arr
         printRange("PRINT COUNT PRIME NUMBER");
-        int count = 0;
+        int countPrimeNum = 0;
         for (int i = 0; i < rndIntArr.length; i++) {
             if (rndIntArr[i] == 2) {
-                count++;
+                countPrimeNum++;
                 i++;
             } else if (rndIntArr[i] > 0) {
-                boolean check = true;
+                boolean checkPrime = true;
                 for (int j = 2; j < rndIntArr[i]; j++) {
                     if (rndIntArr[i] % j == 0) {
-                        check = false;
+                        checkPrime = false;
                         break;
                     }
                 }
-                if (check) {
-                    // Print prime number to check
+                if (checkPrime) {
+                    // Print prime number to checkPrime
                     // System.out.println(rndIntArr[i]);
-                    count++;
+                    countPrimeNum++;
                 }
             }
 
         }
 
-        System.out.println("So luong so nguyen to xuat hien trong mang cua ban la: " + count);
+        System.out.println("So luong so nguyen to xuat hien trong mang cua ban la: " + countPrimeNum);
     }
 
     public static void printRange(String value) {

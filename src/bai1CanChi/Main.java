@@ -13,7 +13,7 @@ public class Main {
             int inputAge = sc.nextInt();
             int currentYear = Year.now().getValue();
             int birthYear = currentYear - inputAge;
-            if (inputAge > 0) {
+            if (inputAge > 0 && birthYear > 0) {
                 System.out.println("Can chi cua ban la: " + can[birthYear % 10] + " " + chi[birthYear % 12]);
                 return;
             } else {
