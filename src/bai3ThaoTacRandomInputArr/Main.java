@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         int[] rndIntArr = new int[50];
         for (int i = 0; i < rndIntArr.length; i++) {
-            rndIntArr[i] = new Random().nextInt(100);
+            rndIntArr[i] = new Random().nextInt(99) + 1;
         }
         printRange("PRINT ARR");
         System.out.println("Mang cua ban la: ");
